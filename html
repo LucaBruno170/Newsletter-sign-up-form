@@ -3,37 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age calculator app</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Newsletter sign-up form</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <section class="section-input-date">
-        <form action="#" id="form">
-            <div class="input-group">
-                <label for="day">Day</label>
-                <input type="number" name="day" id="day">
-                <p id="error-day"></p>
+    <div class="container-card">
+        <section class="section-image">
+            <div class="img">
+                <img src="./newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg" alt="illustration" id="imagen">
             </div>
-            <div class="input-group">
-                <label for="month">Month</label>
-                <input type="number" name="month" id="month">
-                <p id="error-month"></p>
-            </div>
-            <div class="input-group">
-                <label for="year">Year</label>
-                <input type="number" name="year" id="year">
-                <p id="error-year"></p>
-            </div>
-        </form>
-    </section>
-    <section class="section-separator-submit">
-        <input type="submit" form="form" value="submit" class="submit-btn" id="submit-btn">
-    </section>
-    <section class="section-results">
-        <p><span class="years" id="years">--</span> years</p>
-        <p><span class="months" id="months">--</span> months</p>
-        <p><span class="days" id="days">--</span> days</p>
-    </section>
+        </section>
+        <div class="container-desktop">
+            <section class="section-features">
+                <h1 class="heading">Stay updated!</h1>
+                <p class="paragraph">Join 60,000+ products managers receiving monthly updates on:</p>
+                <ul class="items">
+                    <li><img src="./newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg" alt="icon-list">Product discovery and building what matters</li>
+                    <li><img src="./newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg" alt="icon-list">Measuring to ensure updates are a success</li>
+                    <li><img src="./newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg" alt="icon-list">And much more!</li>
+                </ul>
+            </section>
+            <section class="section-form">
+                <form action="" id="submit-form">
+                    <label for="email" class="e-mail">Email address</label>
+                    <div class="mensaje-error" id="mensaje-error"></div>
+                    <input type="email" id="email" name="email" placeholder="email@company.com" class="input-mail">
+                    <input type="submit" value="Subscribe to monthly newsletter" class="btn-submit" id="btn-submit">
+                </form>
+            </section>
+        </div>
+    </div>
+
+
 </body>
-<script src="./src/index.js"></script>
+<script src="index.js"></script>
 </html>
