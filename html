@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator app</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <section class="section-input-date">
+        <form action="#" id="form">
+            <div class="input-group">
+                <label for="day">Day</label>
+                <input type="number" name="day" id="day">
+                <p id="error-day"></p>
+            </div>
+            <div class="input-group">
+                <label for="month">Month</label>
+                <input type="number" name="month" id="month">
+                <p id="error-month"></p>
+            </div>
+            <div class="input-group">
+                <label for="year">Year</label>
+                <input type="number" name="year" id="year">
+                <p id="error-year"></p>
+            </div>
+        </form>
+    </section>
+    <section class="section-separator-submit">
+        <input type="submit" form="form" value="submit" class="submit-btn" id="submit-btn">
+    </section>
+    <section class="section-results">
+        <p><span class="years" id="years">--</span> years</p>
+        <p><span class="months" id="months">--</span> months</p>
+        <p><span class="days" id="days">--</span> days</p>
+    </section>
+</body>
+<script src="./src/index.js"></script>
+</html>
